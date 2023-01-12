@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container-fluid border-dark w-25 border-2 border-danger" id="calc">
+        <label for="number">Calculator</label>
+        <input type="text" name="" id="number" class="w-100 h-25 d-block  border-2" >
+        <div class="container row w-100">
+        <button class="btn btn-outline-primary my-2 col-4 " onclick="document.getElementById('number').value+='7'">7</button>
+        <button class="btn btn-outline-primary my-2 col-4" onclick="document.getElementById('number').value+='8'">8</button>
+        <button class="btn btn-outline-primary my-2 col-4" onclick="document.getElementById('number').value+='9'">9</button>
+        <button class="btn btn-outline-primary my-2 col-4" onclick="document.getElementById('number').value+='4'">4</button>
+        <button class="btn btn-outline-primary my-2 col-4" onclick="document.getElementById('number').value+='5'">5</button>
+        <button class="btn btn-outline-primary my-2 col-4" onclick="document.getElementById('number').value+='6'">6</button>
+        <button class="btn btn-outline-primary my-2 col-4" onclick="document.getElementById('number').value+='1'">1</button>
+        <button class="btn btn-outline-primary my-2 col-4" onclick="document.getElementById('number').value+='2'">2</button>
+        <button class="btn btn-outline-primary my-2 col-4" onclick="document.getElementById('number').value+='3'">3</button>
+      
+        </div>
+        <div class=" container-fluid row w-100">
+            <button class="btn btn-outline-primary my-2 col-6" onclick="document.getElementById('number').value+='0'">0</button>
+            <button class="btn btn-outline-primary my-2 col-6" onclick="document.getElementById('number').value+='.'">.</button>
+        </div>
+
+        <div class="container-fluid row w-100">
+            <button class="btn btn-outline-primary my-2 col-3" onclick="document.getElementById('number').value+='+'">+</button>
+            <button class="btn btn-outline-primary my-2 col-3" onclick="document.getElementById('number').value+='-'">-</button>
+            <button class="btn btn-outline-primary my-2 col-3" onclick="document.getElementById('number').value+='*'">*</button>
+            <button class="btn btn-outline-primary my-2 col-3" onclick="document.getElementById('number').value+='/'">/</button>
+            <button class="btn btn-outline-primary my-2 col-6" onclick="document.getElementById('number').value=eval(document.getElementById('number').value)">=</button>
+            <button class="btn btn-outline-primary my-2 col-6" onclick="document.getElementById('number').value=''">Clear</button>
+        </div>
+       
+    </div>
+
+    <!-- =============================================JavaScript======================================== -->
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
