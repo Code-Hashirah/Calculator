@@ -2,9 +2,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+}
+body{
+    width: 100;
 }
 
 #calc{
+    max-width: 400px;
     float: left;
-    /* display: flex; */
+    box-shadow: 3px 3px 3px 3px gray ;
+}
+
+button{
+    box-shadow: 4px 4px 4px 4px gray ;
+}
+#number{
+    height: 40px;
+    box-shadow: 3px 3px 3px 3px gray ;
+    width: 100%;
+}
+#first{
+    width: 100%;
+}
+#second{
+    width: 100%;
 }
