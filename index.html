@@ -9,42 +9,46 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="row container-fluid" id="calc">
-        <!-- <label for="number">Calculator</label> -->
-      
-        <input type="text" name="" id="number" class="d-block" >
-       
-            <div id="first" class="row w-100">
-                <button class="btn btn-outline-light text-bg-light col-3 my-2 " onclick="document.getElementById('number').value+=' '">AC</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value=''">MC</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='%'">%</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='/'">/</button>
+    <div class="row flex-margin" id="calc">
+      <div id="kakulator">
+        <div class="row w-100">
+            <input type="text" name="" id="number" class="bg-dark text-warning w-100" >
+            <label>Calculator</label>
+          </div>
+            
+                <div id="first" class="row w-100">
+                    <button class="btn btn-warning  col-3 my-2 " onclick="document.getElementById('number').value+=' '">AC</button>
+                    <button class="btn btn-warning  col-3 my-2" onclick="document.getElementById('number').value=''">MC</button>
+                    <button class="btn btn-warning col-3 my-2" onclick="document.getElementById('number').value+='%'">%</button>
+                    <button class="btn btn-warning col-3 my-2" onclick="document.getElementById('number').value+='/'">/</button>
+                </div>
+                <div id="second" class="row w-100">
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2 " onclick="document.getElementById('number').value+='7'">7</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='8'">8</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='9'">9</button>
+                    <button class="btn btn-secondary col-3 my-2" onclick="document.getElementById('number').value+='*'">*</button>
+                </div>
+                <div id="third" class="row w-100">
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='4'">4</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='5'">5</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='6'">6</button>
+                    <button class="btn btn-secondary col-3 my-2" onclick="document.getElementById('number').value+='-'">-</button>
+                </div>
+                <div id="fourth" class="row w-100">
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='1'">1</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='2'">2</button>
+                    <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='3'">3</button>
+                    <button class="btn btn-secondary col-3 my-2" onclick="document.getElementById('number').value+='+'">+</button>
+                </div>
+            
+            <div class="row w-100" id="fifth">
+                <button class="btn btn-outline-light text-bg-light col-6 my-2 col-sm-6" onclick="document.getElementById('number').value+='0'">0</button>
+                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='.'">.</button>
+                <button class="btn btn-secondary col-3 my-2" onclick="document.getElementById('number').value=eval(document.getElementById('number').value)">=</button>
             </div>
-            <div id="second" class="row w-100">
-                <button class="btn btn-outline-light text-bg-light col-3 my-2 " onclick="document.getElementById('number').value+='7'">7</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='8'">8</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='9'">9</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='*'">*</button>
-            </div>
-            <div id="third" class="row w-100">
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='4'">4</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='5'">5</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='6'">6</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='-'">-</button>
-            </div>
-            <div id="fourth" class="row w-100">
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='1'">1</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='2'">2</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='3'">3</button>
-                <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='+'">+</button>
-            </div>
-        
-        <div class="row w-100" id="fifth">
-            <button class="btn btn-outline-light text-bg-light col-6 my-2 col-sm-6" onclick="document.getElementById('number').value+='0'">0</button>
-            <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value+='.'">.</button>
-            <button class="btn btn-outline-light text-bg-light col-3 my-2" onclick="document.getElementById('number').value=eval(document.getElementById('number').value)">=</button>
-        </div>
-        
+            
+      </div>
+     
        
     </div>
 
