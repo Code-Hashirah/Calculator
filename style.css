@@ -20,12 +20,12 @@ label{
 }
 #calc{
     display: flex;
-    /* margin:50px 50px 50px 50px; */
+   
     overflow: hidden;
-    /* padding: 20px; */
+  
     max-width: 400px;
     float: left;
-    /* box-shadow: 3px 3px 3px 3px gray ; */
+   
     box-shadow: 6px 6px 10px rgba(0 0 0 / .15),
              -5px -5px 6px #f3f3f3;
     height: 400px;
@@ -36,11 +36,7 @@ label{
 
 button{
     box-shadow: 4px 4px 4px 4px gray ;
-    /* drop-shadow:4px 4px 4px 4px gray ; */
-    /* box-shadow: 6px 6px 10px rgba(0 0 0 / .15),
-             -5px -5px 6px #f3f3f3;
-    gap: 5rem; */
-    /* row-gap: 5rem; */
+   
 }
 #number{
     height: 80px;
